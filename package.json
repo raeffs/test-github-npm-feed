@@ -1,0 +1,11 @@
+{
+  "name": "test-github-npm-feed",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cpx src/**/* dist/package"
+  },
+  "dependencies": {
+    "cpx": "^1.5.0"
+  }
+}
