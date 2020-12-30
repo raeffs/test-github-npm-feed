@@ -21,7 +21,7 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: '0.0.0-PLACEHOLDER'
-          replace: '1.0.$GITHUB_RUN_ID'
+          replace: '1.0.${{ github.run_id }}'
           include: '.*/package.json'
       - name: Build Package
         run: yarn build
