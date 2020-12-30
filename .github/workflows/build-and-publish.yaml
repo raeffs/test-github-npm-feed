@@ -22,7 +22,7 @@ jobs:
         with:
           find: '0.0.0-PLACEHOLDER'
           replace: '1.0.$GITHUB_RUN_ID'
-          include: 'src/**/package.json'
+          include: '.*/package.json'
       - name: Build Package
         run: yarn build
       - name: Prepare Publish
